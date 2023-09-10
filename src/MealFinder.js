@@ -47,14 +47,14 @@ function MealFinder() {
         component="form"
         style={{ margin: "2% auto" }}
       >
-      <div style={{display: "flex", flexDirection: "row" }}>
+      <div style={{color : 'white', display: "flex", flexDirection: "row" }}>
         <TextField
           variant="outlined"
           value={inputText}
           required = {true}
           onChange={(e) => {setInputText(e.target.value)}}
           label="Search"
-          style={{width : '300px', margin : '1%', background : 'transparent'}}
+          style={{width : '300px', margin : '1%', background : 'transparent', color : 'white', borderRadius : '2px'}}
         />
         <Button
           onClick={handleSearch}
